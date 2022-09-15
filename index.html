@@ -86,7 +86,9 @@
             <hr class="star-dark mb-5">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                    <form id="contactForm" name="sentMessage" action="mailto:paulsodipog100@gmail.com" method="POST"
+                        enctype="multipart/form-data" name="EmailForm>
+
                         <div class="control-group">
                             <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="text"
                                     id="name" required="" placeholder="Name"><label
@@ -110,8 +112,7 @@
                                     class="form-text text-danger help-block"></small></div>
                         </div>
                         <div id="success"></div>
-                        <div><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit"
-                                data-bs-target="#portfolio-modal-6" data-bs-toggle="modal">Send</button></div>
+                        <div><button class="btn btn-primary btn-xl" id="sendMessageButton" type ="submit" value="Submit">Send</button></div>
                     </form>
                 </div>
             </div>
