@@ -11,6 +11,7 @@
   margin-right: 20px;
 }
 
+
 @media (max-width:767px) {
   .simple-slider .swiper-button-next, .simple-slider .swiper-button-prev {
     display: none;
