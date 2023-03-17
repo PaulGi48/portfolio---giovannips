@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html style="color: var(--bs-gray-dark);">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Welcome</title>
+    <title>Welcome , I'm Giovanni</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
@@ -14,6 +13,31 @@
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
+<script>
+    const form = document.getElementById('contactForm');
+    const submitButton = document.getElementById('sendMessageButton');
+  
+    function sendEmail(event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const message = document.getElementById('message').value;
+  
+      // Construct the email body
+      const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage:\n${message}`;
+  
+      // Construct the email address
+      const emailAddress = 'mailto:giovannipaul2023@gmail.com?subject=Contact Form Submission&body=' + encodeURIComponent(body);
+  
+      // Open the email client to send the email
+      window.location.href = emailAddress;
+    }
+  
+    submitButton.addEventListener('click', sendEmail);
+  </script>
+
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72"
     style="background: rgb(214,203,247);">
@@ -62,62 +86,78 @@
             <hr class="star-light mb-5">
             <div class="row">
                 <div class="col-lg-4 ms-auto">
-                    <p class="lead">Technology , audio-visual and media enthusiast with a penchant for web
-                        development.<br>A quick learner who persists on getting results.<br><br>3+ years - MERN
-                        freelance front-end development <br>2+ years - Web3 development<br>2+ years - Meta community
-                        manager</p>
+                    <p class="lead">
+                        Technology , audio-visual and media enthusiast with a penchant for web development.
+                        <br>A quick learner who persists on getting results.<br>
+                        <br>3+ years - MERN freelance front-end development <br>
+                        <br> 2+ years - Web3 development<br>
+                        <br> 2+ years - Web3 enthusiast<br>
+                    </p>
                 </div>
                 <div class="col-lg-4 me-auto">
                     <p class="lead">I am reliant , able and I continually strive to become a better person. Hire me and
                         you'll get a priceless resource.</p>
                 </div>
             </div>
-            <div class="text-center mt-4"><a href="./assets/pdf/Curriculum Vitae.pdf"
-                    class="btn btn-outline-light btn-xl" role="button"><i class="fa fa-download me-2"></i><span>My
-                        Resume</span></a><a class="btn btn-outline-light btn-xl" role="button" href="#"><i
-                        class="fa fa-download me-2"></i><span>My School Results</span></a><a
-                    class="btn btn-outline-light btn-xl" role="button" href="./assets/pdf/Cover letter.pdf"><i
-                        class="fa fa-download me-2"></i><span>My Referrals</span></a></div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-secondary mb-0">Contact Me</h2>
-            <hr class="star-dark mb-5">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <form id="contactForm" name="sentMessage" action="mailto:paulsodipog100@gmail.com" method="POST"
-                        enctype="multipart/form-data" name="EmailForm>
-
-                        <div class=" control-group">
-                        <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="text" id="name"
-                                required="" placeholder="Name"><label class="form-label">Name</label><small
-                                class="form-text text-danger help-block"></small></div>
-                </div>
-                <div class="control-group">
-                    <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="email" id="email"
-                            required="" placeholder="Email Address"><label class="form-label">Email
-                            Address</label><small class="form-text text-danger help-block"></small></div>
-                </div>
-                <div class="control-group">
-                    <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="tel" id="phone"
-                            required="" placeholder="Phone Number"><label class="form-label">Phone
-                            Number</label><small class="form-text text-danger help-block"></small></div>
-                </div>
-                <div class="control-group">
-                    <div class="mb-5 form-floating controls pb-2"><textarea class="form-control" id="message"
-                            required="" placeholder="Message" style="height: 150px;"></textarea><label
-                            class="form-label">Message</label><small class="form-text text-danger help-block"></small>
-                    </div>
-                </div>
-                <div id="success"></div>
-                <div><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit"
-                        value="Submit">Send</button></div>
-                </form>
+            <div class="text-center mt-4">
+                <a href="./assets/pdf/Curriculum Vitae.pdf" class="btn btn-outline-light btn-xl" role="button"> <i
+                        class="fa fa-download me-2"></i> <span>My Resume</span></a>
+                <a class="btn btn-outline-light btn-xl" role="button" href="#"> <i class="fa fa-download me-2"></i>
+                    <span>My School Results</span></a>
+                <a class="btn btn-outline-light btn-xl" role="button" href="#contact"> <i
+                        class="fa fa-download me-2"></i><span> My Referrals (ONLY AVAILABLE ON REQUEST) </span></a>
             </div>
         </div>
-        </div>
     </section>
+
+
+    <section id="contact">
+        <div class="container">
+          <h2 class="text-uppercase text-center text-secondary mb-0">Contact Me</h2>
+          <hr class="star-dark mb-5">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <form id="contactForm">
+                <div class="control-group">
+                  <div class="mb-0 form-floating controls pb-2">
+                    <input class="form-control" type="text" id="name" required="" placeholder="Name">
+                    <label class="form-label">Name</label>
+                    <small class="form-text text-danger help-block"></small>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="mb-0 form-floating controls pb-2">
+                    <input class="form-control" type="email" id="email" required="" placeholder="Email Address">
+                    <label class="form-label">Email Address</label>
+                    <small class="form-text text-danger help-block"></small>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="mb-0 form-floating controls pb-2">
+                    <input class="form-control" type="tel" id="phone" required="" placeholder="Phone Number">
+                    <label class="form-label">Phone Number</label>
+                    <small class="form-text text-danger help-block"></small>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="mb-5 form-floating controls pb-2">
+                    <textarea class="form-control" id="message" required="" placeholder="Message" style="height: 150px;"></textarea>
+                    <label class="form-label">Message</label>
+                    <small class="form-text text-danger help-block"></small>
+                  </div>
+                </div>
+                <div id="success"></div>
+                <div>
+                  <button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
     <footer class="text-center footer">
         <div class="container">
             <div class="row justify-content-center" style="text-align: center;">
