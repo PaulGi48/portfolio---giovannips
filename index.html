@@ -1,199 +1,190 @@
 <!DOCTYPE html>
 <html style="color: var(--bs-gray-dark);">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Welcome , I'm Giovanni</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Welcome , I'm Giovanni</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <script>
-    const form = document.getElementById('contactForm');
-    const submitButton = document.getElementById('sendMessageButton');
-  
-    function sendEmail(event) {
-      event.preventDefault(); // Prevent the form from submitting normally
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const phone = document.getElementById('phone').value;
-      const message = document.getElementById('message').value;
-  
-      // Construct the email body
-      const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage:\n${message}`;
-  
-      // Construct the email address
-      const emailAddress = 'mailto:giovannipaul2023@gmail.com?subject=Contact Form Submission&body=' + encodeURIComponent(body);
-  
-      // Open the email client to send the email
-      window.location.href = emailAddress;
-    }
-  
-    submitButton.addEventListener('click', sendEmail);
+  const form = document.getElementById('contactForm');
+  const submitButton = document.getElementById('sendMessageButton');
+
+  function sendEmail(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+
+    // Construct the email body
+    const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage:\n${message}`;
+
+    // Construct the email address
+    const emailAddress = 'mailto:giovannipaul2023@gmail.com?subject=Contact Form Submission&body=' + encodeURIComponent(body);
+
+    // Open the email client to send the email
+    window.location.href = emailAddress;
+  }
+
+  submitButton.addEventListener('click', sendEmail);
+</script>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72"
+  style="background: rgb(214,203,247);">
+  <header class="text-white masthead" style="background: transparent;padding: 0px 0px 96px;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+      <div class="container"><a class="navbar-brand" href="#page-top">PORTFOLIO</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-0 mx-lg-1"></li>
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="projects.html"
+                style="color: rgb(255,255,255);">Projects</a></li>
+          </ul>
+        </div><button data-bs-target="#navbarResponsive" data-bs-toggle="collapse"
+          class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
+            class="fa fa-bars"></i></button>
+      </div>
+    </nav>
+  </header>
+  <section class="text-start bg-primary d-xl-flex justify-content-xl-center interactive-section">
+    <div class="container text-center profile-container">
+      <img class="img-fluid d-block mx-auto mb-5 profile-pic" src="assets/img/profilepic.jpeg"
+        alt="Giovanni Paul-Sodipo">
+      <h1 class="name-heading">Giovanni Paul-Sodipo</h1>
+      <hr class="star-light">
+      <h3 class="font-weight-light mb-0 role-description"></h3>
+    </div>
+  </section>
+  <script>
+    document.querySelector('.profile-pic').addEventListener('mouseenter', () => {
+      document.querySelector('.role-description').textContent = "Hi thats me!";
+    });
+
+    document.querySelector('.profile-pic').addEventListener('mouseleave', () => {
+      document.querySelector('.role-description').textContent = "Web Developer - Graphic Artist - Audio/Visual Engineer";
+    });
   </script>
 
 
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72"
-    style="background: rgb(214,203,247);">
-    <header class="text-white masthead" style="background: transparent;padding: 0px 0px 96px;">
-        <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-            <div class="container"><a class="navbar-brand" href="#page-top">PORTFOLIO</a>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                                href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                                href="#contact">Contact</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                                href="projects.html" style="color: rgb(255,255,255);">Projects</a></li>
-                    </ul>
-                </div><button data-bs-target="#navbarResponsive" data-bs-toggle="collapse"
-                    class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
-                        class="fa fa-bars"></i></button>
-            </div>
-        </nav>
-    </header>
-    <section class="text-start bg-primary d-xl-flex justify-content-xl-center">
-        <div class="container text-center text-sm-center text-md-center"><img class="img-fluid d-block mx-auto mb-5"
-                src="assets/img/EEBC41A7-F1D7-42CA-9506-46A9F85B9805.jpeg"
-                style="height: 268.422px;padding: 57px;border-radius: 144px;border-style: none;">
-            <h1>Giovanni Paul-Sodipo</h1>
-            <hr class="star-light">
-            <h2 class="font-weight-light mb-0">Web Developer - Graphic Artist - Audio/Visual Engineer</h2>
-            <h2 class="font-weight-light mb-0" style="color: rgb(254,254,254);"><a href="https://github.com/PaulGi48"
-                    style="color: white;">GitHUB</a></h2>
-            <h2 class="font-weight-light mb-0"><a href="https://dev.to/paulgi48"
-                    style="border-color: transparent;border-top-color: rgb(24,;border-right-color: 188,;border-bottom-color: 156);border-left-color: 188,;color: white;">DEV.TO<br></a>
-            </h2>
-            <h2 class="font-weight-light mb-0"><a href="https://www.linkedin.com/in/giovanni-paul-sodipo-968324183/"
-                    style="color: white;">LINKEDIN<br></a>
-            </h2>
-            <h2 class="font-weight-light mb-0"><a href="https://biglink.to/trilla48" style="color: white;">AUDIO
-                    WORKS</a></h2>
+  <section class="text-start text-white bg-primary mb-0 professional-about" id="about">
+    <div class="container">
+      <h2 class="text-uppercase text-center text-white section-heading">About Me</h2>
+      <hr class="star-light mb-5">
+      <div class="row">
+        <div class="col-lg-4 ms-auto">
+          <p class="lead professional-text">
+            Technology, audio-visual and media enthusiast with a penchant for web development.
+            <br>A quick learner who persists on getting results.<br>
+            <br>3+ years - MERN freelance front-end development<br>
+            <br>2+ years - Web3 development<br>
+            <br>2+ years - Web3 enthusiast<br>
+          </p>
         </div>
-    </section>
-    <section class="text-start text-white bg-primary mb-0" id="about">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-white">About</h2>
-            <hr class="star-light mb-5">
-            <div class="row">
-                <div class="col-lg-4 ms-auto">
-                    <p class="lead">
-                        Technology , audio-visual and media enthusiast with a penchant for web development.
-                        <br>A quick learner who persists on getting results.<br>
-                        <br>3+ years - MERN freelance front-end development <br>
-                        <br> 2+ years - Web3 development<br>
-                        <br> 2+ years - Web3 enthusiast<br>
-                    </p>
-                </div>
-                <div class="col-lg-4 me-auto">
-                    <p class="lead">I am reliant , able and I continually strive to become a better person. Hire me and
-                        you'll get a priceless resource.</p>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <a href="./assets/pdf/Curriculum Vitae.pdf" class="btn btn-outline-light btn-xl" role="button"> <i
-                        class="fa fa-download me-2"></i> <span>My Resume</span></a>
-                <a class="btn btn-outline-light btn-xl" role="button" href="#"> <i class="fa fa-download me-2"></i>
-                    <span>My School Results</span></a>
-                <a class="btn btn-outline-light btn-xl" role="button" href="#contact"> <i
-                        class="fa fa-download me-2"></i><span> My Referrals (ONLY AVAILABLE ON REQUEST) </span></a>
-            </div>
+        <div class="col-lg-4 me-auto">
+          <p class="lead professional-text">
+            I am reliant, able and I continually strive to become a better person. Hire me and
+            you'll get a priceless resource.
+          </p>
         </div>
-    </section>
-
-
-    <section id="contact">
-        <div class="container">
-          <h2 class="text-uppercase text-center text-secondary mb-0">Contact Me</h2>
-          <hr class="star-dark mb-5">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <form id="contactForm">
-                <div class="control-group">
-                  <div class="mb-0 form-floating controls pb-2">
-                    <input class="form-control" type="text" id="name" required="" placeholder="Name">
-                    <label class="form-label">Name</label>
-                    <small class="form-text text-danger help-block"></small>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <div class="mb-0 form-floating controls pb-2">
-                    <input class="form-control" type="email" id="email" required="" placeholder="Email Address">
-                    <label class="form-label">Email Address</label>
-                    <small class="form-text text-danger help-block"></small>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <div class="mb-0 form-floating controls pb-2">
-                    <input class="form-control" type="tel" id="phone" required="" placeholder="Phone Number">
-                    <label class="form-label">Phone Number</label>
-                    <small class="form-text text-danger help-block"></small>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <div class="mb-5 form-floating controls pb-2">
-                    <textarea class="form-control" id="message" required="" placeholder="Message" style="height: 150px;"></textarea>
-                    <label class="form-label">Message</label>
-                    <small class="form-text text-danger help-block"></small>
-                  </div>
-                </div>
-                <div id="success"></div>
-                <div>
-                  <button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-
-
-    <footer class="text-center footer">
-        <div class="container">
-            <div class="row justify-content-center" style="text-align: center;">
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Location</h4>
-                    <p>Lagos.Nigeria</p>
-                </div>
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase">Around the Web</h4>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a
-                                class="btn btn-outline-light text-center btn-social rounded-circle" role="button"
-                                href="#"><i class="fa fa-google-plus fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a
-                                class="btn btn-outline-light text-center btn-social rounded-circle" role="button"
-                                href="#"><i class="fa fa-twitter fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a
-                                class="btn btn-outline-light text-center btn-social rounded-circle" role="button"
-                                href="#"><i class="fa fa-dribbble fa-fw"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="text-center text-white copyright py-4">
-        <div class="container"><small>Copyright ©&nbsp;Engineered By Giovanni&nbsp;</small></div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="./assets/pdf/Curriculum Vitae.pdf" class="btn btn-outline-light btn-xl resume-button" role="button">
+          <i class="fa fa-download me-2"></i> <span>My Resume</span>
+        </a>
+        <a class="btn btn-outline-light btn-xl resume-button" role="button" href="#">
+          <i class="fa fa-download me-2"></i> <span>My School Results</span>
+        </a>
+        <a class="btn btn-outline-light btn-xl resume-button" role="button" href="#contact">
+          <i class="fa fa-download me-2"></i><span> My Referrals (ONLY AVAILABLE ON REQUEST) </span>
+        </a>
+      </div>
     </div>
-    <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center d-block rounded text-white"
-            href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="assets/js/freelancer.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
-    <script src="assets/js/Simple-Slider.js"></script>
-    <script src="assets/js/modal.js"></script>
+  </section>
+
+
+
+  <section id="contact">
+    <div class="container row justify-content-center" style="text-align: center" ;><iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSc1z2qSxrCKtxYK6q-ny7-S6pd59zhqXN47tXzCmHdd5Itdyg/viewform?embedded=true"
+        width="640" height="821" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </section>
+
+
+
+  <footer class="text-center footer">
+    <div class="container">
+      <div class="row justify-content-center" style="text-align: center;">
+        <div class="col-md-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p>Lagos.Nigeria</p>
+        </div>
+        <div class="col-md-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase">Around the Web</h4>
+          <ul class="list-inline">
+            <!-- Social Media Links -->
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social rounded-circle" href="https://twitter.com/YOUR_TWITTER">
+                <i class="fa fa-twitter fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social rounded-circle" href="https://dev.to/paulgi48">
+                <i class="fa fa-dribbble fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social rounded-circle" href="https://github.com/PaulGi48"
+                style="color: white;">
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social rounded-circle"
+                href="https://www.linkedin.com/in/giovanni-paul-sodipo-968324183/" style="color: white;">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social rounded-circle" href="https://biglink.to/trilla48"
+                style="color: white;">
+                <i class="fa fa-music"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </footer>
+  <div class="text-center text-white copyright py-4">
+    <div class="container"><small>Copyright ©&nbsp;Engineered By Giovanni&nbsp;</small></div>
+  </div>
+  <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center d-block rounded text-white"
+      href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/bs-init.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/js/freelancer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+  <script src="assets/js/Simple-Slider.js"></script>
+  <script src="assets/js/modal.js"></script>
 </body>
 
 </html>
